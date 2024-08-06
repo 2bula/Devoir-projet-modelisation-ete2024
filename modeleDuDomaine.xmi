@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_aQfXcFQWEe-ALtDLBqByUg" name="projet_modelisation">
+  <eAnnotations xmi:id="_aQfXcVQWEe-ALtDLBqByUg" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_aQfXclQWEe-ALtDLBqByUg" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfXc1QWEe-ALtDLBqByUg" value="3.0.0"/>
+    </contents>
+    <contents xmi:type="uml:Property" xmi:id="_aQfXdFQWEe-ALtDLBqByUg" name="isRoundTrip"/>
+  </eAnnotations>
+  <packagedElement xmi:type="uml:Class" xmi:id="_aQfXdVQWEe-ALtDLBqByUg" name="Employé">
+    <ownedComment xmi:id="_aQfXdlQWEe-ALtDLBqByUg">
+      <eAnnotations xmi:id="_aQfXd1QWEe-ALtDLBqByUg" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_aQfXeFQWEe-ALtDLBqByUg" name="NoteType_Name">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfXeVQWEe-ALtDLBqByUg" value="description"/>
+        </contents>
+      </eAnnotations>
+      <body>&lt;&lt;note>> 
+Un employé ne peut avoir qu'une seule activité en cours à la fois.</body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_aQfXelQWEe-ALtDLBqByUg" name="activité" visibility="public" type="_aQfYGlQWEe-ALtDLBqByUg" isUnique="false" association="_aQfXxlQWEe-ALtDLBqByUg">
+      <eAnnotations xmi:id="_aQfXe1QWEe-ALtDLBqByUg" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_aQfXfFQWEe-ALtDLBqByUg" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfXfVQWEe-ALtDLBqByUg" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfXflQWEe-ALtDLBqByUg" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfXf1QWEe-ALtDLBqByUg" value="*"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfXgFQWEe-ALtDLBqByUg" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfXgVQWEe-ALtDLBqByUg" value="no_access"/>
+        </contents>
+      </eAnnotations>
+      <ownedComment xmi:id="_aQfXglQWEe-ALtDLBqByUg">
+        <eAnnotations xmi:id="_aQfXg1QWEe-ALtDLBqByUg" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_aQfXhFQWEe-ALtDLBqByUg" name="NoteType_Name">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfXhVQWEe-ALtDLBqByUg" value="description"/>
+          </contents>
+        </eAnnotations>
+        <body>&lt;Saisir le texte de la note ici></body>
+      </ownedComment>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aQfXhlQWEe-ALtDLBqByUg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aQfXh1QWEe-ALtDLBqByUg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_aQfXiFQWEe-ALtDLBqByUg" name="taux_Horaire" visibility="public" type="_aQf-gFQWEe-ALtDLBqByUg" isUnique="false" association="_aQfXz1QWEe-ALtDLBqByUg">
+      <eAnnotations xmi:id="_aQfXiVQWEe-ALtDLBqByUg" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_aQfXilQWEe-ALtDLBqByUg" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfXi1QWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfXjFQWEe-ALtDLBqByUg" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfXjVQWEe-ALtDLBqByUg" value="*"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfXjlQWEe-ALtDLBqByUg" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfXj1QWEe-ALtDLBqByUg" value="no_access"/>
+        </contents>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aQfXkFQWEe-ALtDLBqByUg" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_aQfXkVQWEe-ALtDLBqByUg" name="nom" isUnique="false">
+      <eAnnotations xmi:id="_aQfXklQWEe-ALtDLBqByUg" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_aQfXk1QWEe-ALtDLBqByUg" name="isUndefined"/>
+        <contents xmi:type="uml:Property" xmi:id="_aQfXlFQWEe-ALtDLBqByUg" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfXlVQWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfXllQWEe-ALtDLBqByUg" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfXl1QWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfXmFQWEe-ALtDLBqByUg" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfXmVQWEe-ALtDLBqByUg" value="no_access"/>
+        </contents>
+      </eAnnotations>
+      <ownedComment xmi:id="_aQfXmlQWEe-ALtDLBqByUg">
+        <eAnnotations xmi:id="_aQfXm1QWEe-ALtDLBqByUg" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_aQfXnFQWEe-ALtDLBqByUg" name="NoteType_Name">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfXnVQWEe-ALtDLBqByUg" value="description"/>
+          </contents>
+        </eAnnotations>
+        <body>&lt;Saisir le texte de la note ici></body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_aQfXnlQWEe-ALtDLBqByUg" name="date_embauche" isUnique="false">
+      <eAnnotations xmi:id="_aQfXn1QWEe-ALtDLBqByUg" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_aQfXoFQWEe-ALtDLBqByUg" name="isUndefined"/>
+        <contents xmi:type="uml:Property" xmi:id="_aQfXoVQWEe-ALtDLBqByUg" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfXolQWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfXo1QWEe-ALtDLBqByUg" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfXpFQWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfXpVQWEe-ALtDLBqByUg" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfXplQWEe-ALtDLBqByUg" value="no_access"/>
+        </contents>
+      </eAnnotations>
+      <ownedComment xmi:id="_aQfXp1QWEe-ALtDLBqByUg">
+        <eAnnotations xmi:id="_aQfXqFQWEe-ALtDLBqByUg" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_aQfXqVQWEe-ALtDLBqByUg" name="NoteType_Name">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfXqlQWEe-ALtDLBqByUg" value="description"/>
+          </contents>
+        </eAnnotations>
+        <body>&lt;Saisir le texte de la note ici></body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_aQfXq1QWEe-ALtDLBqByUg" name="date_depart" isUnique="false">
+      <eAnnotations xmi:id="_aQfXrFQWEe-ALtDLBqByUg" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_aQfXrVQWEe-ALtDLBqByUg" name="isUndefined"/>
+        <contents xmi:type="uml:Property" xmi:id="_aQfXrlQWEe-ALtDLBqByUg" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfXr1QWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfXsFQWEe-ALtDLBqByUg" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfXsVQWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfXslQWEe-ALtDLBqByUg" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfXs1QWEe-ALtDLBqByUg" value="no_access"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_aQfXtFQWEe-ALtDLBqByUg" name="tauxHoraireBase" isUnique="false">
+      <eAnnotations xmi:id="_aQfXtVQWEe-ALtDLBqByUg" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_aQfXtlQWEe-ALtDLBqByUg" name="isUndefined"/>
+        <contents xmi:type="uml:Property" xmi:id="_aQfXt1QWEe-ALtDLBqByUg" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfXuFQWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfXuVQWEe-ALtDLBqByUg" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfXulQWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfXu1QWEe-ALtDLBqByUg" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfXvFQWEe-ALtDLBqByUg" value="no_access"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_aQfXvVQWEe-ALtDLBqByUg" name="tauxHoraireSupp" isUnique="false">
+      <eAnnotations xmi:id="_aQfXvlQWEe-ALtDLBqByUg" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_aQfXv1QWEe-ALtDLBqByUg" name="isUndefined"/>
+        <contents xmi:type="uml:Property" xmi:id="_aQfXwFQWEe-ALtDLBqByUg" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfXwVQWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfXwlQWEe-ALtDLBqByUg" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfXw1QWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfXxFQWEe-ALtDLBqByUg" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfXxVQWEe-ALtDLBqByUg" value="no_access"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_aQfXxlQWEe-ALtDLBqByUg" memberEnd="_aQfXelQWEe-ALtDLBqByUg _aQfXx1QWEe-ALtDLBqByUg">
+    <ownedEnd xmi:id="_aQfXx1QWEe-ALtDLBqByUg" visibility="public" type="_aQfXdVQWEe-ALtDLBqByUg" isUnique="false" association="_aQfXxlQWEe-ALtDLBqByUg">
+      <eAnnotations xmi:id="_aQfXyFQWEe-ALtDLBqByUg" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_aQfXyVQWEe-ALtDLBqByUg" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfXylQWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfXy1QWEe-ALtDLBqByUg" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfXzFQWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfXzVQWEe-ALtDLBqByUg" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfXzlQWEe-ALtDLBqByUg" value="no_access"/>
+        </contents>
+      </eAnnotations>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_aQfXz1QWEe-ALtDLBqByUg" memberEnd="_aQfXiFQWEe-ALtDLBqByUg _aQfX0FQWEe-ALtDLBqByUg">
+    <ownedEnd xmi:id="_aQfX0FQWEe-ALtDLBqByUg" visibility="public" type="_aQfXdVQWEe-ALtDLBqByUg" isUnique="false" association="_aQfXz1QWEe-ALtDLBqByUg">
+      <eAnnotations xmi:id="_aQfX0VQWEe-ALtDLBqByUg" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_aQfX0lQWEe-ALtDLBqByUg" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfX01QWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfX1FQWEe-ALtDLBqByUg" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfX1VQWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfX1lQWEe-ALtDLBqByUg" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfX11QWEe-ALtDLBqByUg" value="no_access"/>
+        </contents>
+      </eAnnotations>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_aQfX2FQWEe-ALtDLBqByUg" name="Projet">
+    <ownedAttribute xmi:id="_aQfX2VQWEe-ALtDLBqByUg" name="activité" visibility="public" type="_aQfYGlQWEe-ALtDLBqByUg" isUnique="false" association="_aQfYBlQWEe-ALtDLBqByUg">
+      <eAnnotations xmi:id="_aQfX2lQWEe-ALtDLBqByUg" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_aQfX21QWEe-ALtDLBqByUg" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfX3FQWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfX3VQWEe-ALtDLBqByUg" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfX3lQWEe-ALtDLBqByUg" value="*"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfX31QWEe-ALtDLBqByUg" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfX4FQWEe-ALtDLBqByUg" value="no_access"/>
+        </contents>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aQfX4VQWEe-ALtDLBqByUg" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_aQfX4lQWEe-ALtDLBqByUg" name="employé" visibility="public" type="_aQfXdVQWEe-ALtDLBqByUg" isUnique="false" aggregation="shared" association="_aQfYD1QWEe-ALtDLBqByUg">
+      <eAnnotations xmi:id="_aQfX41QWEe-ALtDLBqByUg" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_aQfX5FQWEe-ALtDLBqByUg" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfX5VQWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfX5lQWEe-ALtDLBqByUg" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfX51QWEe-ALtDLBqByUg" value="*"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfX6FQWEe-ALtDLBqByUg" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfX6VQWEe-ALtDLBqByUg" value="no_access"/>
+        </contents>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aQfX6lQWEe-ALtDLBqByUg" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_aQfX61QWEe-ALtDLBqByUg" name="nomProjet" isUnique="false">
+      <eAnnotations xmi:id="_aQfX7FQWEe-ALtDLBqByUg" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_aQfX7VQWEe-ALtDLBqByUg" name="isUndefined"/>
+        <contents xmi:type="uml:Property" xmi:id="_aQfX7lQWEe-ALtDLBqByUg" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfX71QWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfX8FQWEe-ALtDLBqByUg" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfX8VQWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfX8lQWEe-ALtDLBqByUg" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfX81QWEe-ALtDLBqByUg" value="no_access"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_aQfX9FQWEe-ALtDLBqByUg" name="dateDebut" isUnique="false">
+      <eAnnotations xmi:id="_aQfX9VQWEe-ALtDLBqByUg" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_aQfX9lQWEe-ALtDLBqByUg" name="isUndefined"/>
+        <contents xmi:type="uml:Property" xmi:id="_aQfX91QWEe-ALtDLBqByUg" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfX-FQWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfX-VQWEe-ALtDLBqByUg" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfX-lQWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfX-1QWEe-ALtDLBqByUg" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfX_FQWEe-ALtDLBqByUg" value="no_access"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_aQfX_VQWEe-ALtDLBqByUg" name="dateFin" isUnique="false">
+      <eAnnotations xmi:id="_aQfX_lQWEe-ALtDLBqByUg" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_aQfX_1QWEe-ALtDLBqByUg" name="isUndefined"/>
+        <contents xmi:type="uml:Property" xmi:id="_aQfYAFQWEe-ALtDLBqByUg" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfYAVQWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfYAlQWEe-ALtDLBqByUg" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfYA1QWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfYBFQWEe-ALtDLBqByUg" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfYBVQWEe-ALtDLBqByUg" value="no_access"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_aQfYBlQWEe-ALtDLBqByUg" memberEnd="_aQfX2VQWEe-ALtDLBqByUg _aQfYB1QWEe-ALtDLBqByUg">
+    <ownedEnd xmi:id="_aQfYB1QWEe-ALtDLBqByUg" visibility="public" type="_aQfX2FQWEe-ALtDLBqByUg" isUnique="false" association="_aQfYBlQWEe-ALtDLBqByUg">
+      <eAnnotations xmi:id="_aQfYCFQWEe-ALtDLBqByUg" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_aQfYCVQWEe-ALtDLBqByUg" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfYClQWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfYC1QWEe-ALtDLBqByUg" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfYDFQWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfYDVQWEe-ALtDLBqByUg" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfYDlQWEe-ALtDLBqByUg" value="no_access"/>
+        </contents>
+      </eAnnotations>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_aQfYD1QWEe-ALtDLBqByUg" memberEnd="_aQfX4lQWEe-ALtDLBqByUg _aQfYEFQWEe-ALtDLBqByUg">
+    <ownedEnd xmi:id="_aQfYEFQWEe-ALtDLBqByUg" visibility="public" type="_aQfX2FQWEe-ALtDLBqByUg" isUnique="false" association="_aQfYD1QWEe-ALtDLBqByUg">
+      <eAnnotations xmi:id="_aQfYEVQWEe-ALtDLBqByUg" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_aQfYElQWEe-ALtDLBqByUg" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfYE1QWEe-ALtDLBqByUg" value="0"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfYFFQWEe-ALtDLBqByUg" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfYFVQWEe-ALtDLBqByUg" value="*"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfYFlQWEe-ALtDLBqByUg" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfYF1QWEe-ALtDLBqByUg" value="no_access"/>
+        </contents>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aQfYGFQWEe-ALtDLBqByUg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aQfYGVQWEe-ALtDLBqByUg"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_aQfYGlQWEe-ALtDLBqByUg" name="Activité">
+    <ownedAttribute xmi:id="_aQfYG1QWEe-ALtDLBqByUg" name="discipline" visibility="public" type="_aQf-oFQWEe-ALtDLBqByUg" isUnique="false" association="_aQfYPlQWEe-ALtDLBqByUg">
+      <eAnnotations xmi:id="_aQfYHFQWEe-ALtDLBqByUg" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_aQfYHVQWEe-ALtDLBqByUg" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfYHlQWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfYH1QWEe-ALtDLBqByUg" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfYIFQWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfYIVQWEe-ALtDLBqByUg" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfYIlQWEe-ALtDLBqByUg" value="no_access"/>
+        </contents>
+      </eAnnotations>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_aQfYI1QWEe-ALtDLBqByUg" name="dateDebut" isUnique="false">
+      <eAnnotations xmi:id="_aQfYJFQWEe-ALtDLBqByUg" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_aQfYJVQWEe-ALtDLBqByUg" name="isUndefined"/>
+        <contents xmi:type="uml:Property" xmi:id="_aQfYJlQWEe-ALtDLBqByUg" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfYJ1QWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfYKFQWEe-ALtDLBqByUg" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfYKVQWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfYKlQWEe-ALtDLBqByUg" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfYK1QWEe-ALtDLBqByUg" value="no_access"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_aQfYLFQWEe-ALtDLBqByUg" name="dateFin" isUnique="false">
+      <eAnnotations xmi:id="_aQfYLVQWEe-ALtDLBqByUg" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_aQfYLlQWEe-ALtDLBqByUg" name="isUndefined"/>
+        <contents xmi:type="uml:Property" xmi:id="_aQfYL1QWEe-ALtDLBqByUg" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfYMFQWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfYMVQWEe-ALtDLBqByUg" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfYMlQWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfYM1QWEe-ALtDLBqByUg" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfYNFQWEe-ALtDLBqByUg" value="no_access"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_aQfYNVQWEe-ALtDLBqByUg" name="discipline" type="_aQf-oFQWEe-ALtDLBqByUg" isUnique="false">
+      <eAnnotations xmi:id="_aQfYNlQWEe-ALtDLBqByUg" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_aQfYN1QWEe-ALtDLBqByUg" name="isUndefined"/>
+        <contents xmi:type="uml:Property" xmi:id="_aQfYOFQWEe-ALtDLBqByUg" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfYOVQWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfYOlQWEe-ALtDLBqByUg" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfYO1QWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfYPFQWEe-ALtDLBqByUg" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfYPVQWEe-ALtDLBqByUg" value="no_access"/>
+        </contents>
+      </eAnnotations>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_aQfYPlQWEe-ALtDLBqByUg" memberEnd="_aQfYG1QWEe-ALtDLBqByUg _aQfYP1QWEe-ALtDLBqByUg">
+    <ownedEnd xmi:id="_aQfYP1QWEe-ALtDLBqByUg" visibility="public" type="_aQfYGlQWEe-ALtDLBqByUg" isUnique="false" association="_aQfYPlQWEe-ALtDLBqByUg">
+      <eAnnotations xmi:id="_aQfYQFQWEe-ALtDLBqByUg" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_aQfYQVQWEe-ALtDLBqByUg" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfYQlQWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfYQ1QWEe-ALtDLBqByUg" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfYRFQWEe-ALtDLBqByUg" value="*"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQfYRVQWEe-ALtDLBqByUg" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQfYRlQWEe-ALtDLBqByUg" value="no_access"/>
+        </contents>
+      </eAnnotations>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aQfYR1QWEe-ALtDLBqByUg" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_aQf-gFQWEe-ALtDLBqByUg" name="Taux_Horaire">
+    <ownedAttribute xmi:id="_aQf-gVQWEe-ALtDLBqByUg" name="dateDebut" isUnique="false">
+      <eAnnotations xmi:id="_aQf-glQWEe-ALtDLBqByUg" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_aQf-g1QWEe-ALtDLBqByUg" name="isUndefined"/>
+        <contents xmi:type="uml:Property" xmi:id="_aQf-hFQWEe-ALtDLBqByUg" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQf-hVQWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQf-hlQWEe-ALtDLBqByUg" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQf-h1QWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQf-iFQWEe-ALtDLBqByUg" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQf-iVQWEe-ALtDLBqByUg" value="no_access"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_aQf-ilQWEe-ALtDLBqByUg" name="dateFin" isUnique="false">
+      <eAnnotations xmi:id="_aQf-i1QWEe-ALtDLBqByUg" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_aQf-jFQWEe-ALtDLBqByUg" name="isUndefined"/>
+        <contents xmi:type="uml:Property" xmi:id="_aQf-jVQWEe-ALtDLBqByUg" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQf-jlQWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQf-j1QWEe-ALtDLBqByUg" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQf-kFQWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQf-kVQWEe-ALtDLBqByUg" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQf-klQWEe-ALtDLBqByUg" value="no_access"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_aQf-k1QWEe-ALtDLBqByUg" name="tauxHoraire" isUnique="false">
+      <eAnnotations xmi:id="_aQf-lFQWEe-ALtDLBqByUg" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_aQf-lVQWEe-ALtDLBqByUg" name="isUndefined"/>
+        <contents xmi:type="uml:Property" xmi:id="_aQf-llQWEe-ALtDLBqByUg" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQf-l1QWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQf-mFQWEe-ALtDLBqByUg" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQf-mVQWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQf-mlQWEe-ALtDLBqByUg" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQf-m1QWEe-ALtDLBqByUg" value="no_access"/>
+        </contents>
+      </eAnnotations>
+      <ownedComment xmi:id="_aQf-nFQWEe-ALtDLBqByUg">
+        <eAnnotations xmi:id="_aQf-nVQWEe-ALtDLBqByUg" source="Objing">
+          <contents xmi:type="uml:Property" xmi:id="_aQf-nlQWEe-ALtDLBqByUg" name="NoteType_Name">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQf-n1QWEe-ALtDLBqByUg" value="description"/>
+          </contents>
+        </eAnnotations>
+        <body>&lt;Saisir le texte de la note ici></body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_aQf-oFQWEe-ALtDLBqByUg" name="Discipline">
+    <ownedAttribute xmi:id="_aQf-oVQWEe-ALtDLBqByUg" name="nom" isUnique="false">
+      <eAnnotations xmi:id="_aQf-olQWEe-ALtDLBqByUg" source="Objing">
+        <contents xmi:type="uml:Property" xmi:id="_aQf-o1QWEe-ALtDLBqByUg" name="isUndefined"/>
+        <contents xmi:type="uml:Property" xmi:id="_aQf-pFQWEe-ALtDLBqByUg" name="MultiMin">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQf-pVQWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQf-plQWEe-ALtDLBqByUg" name="MultiMax">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQf-p1QWEe-ALtDLBqByUg" value="1"/>
+        </contents>
+        <contents xmi:type="uml:Property" xmi:id="_aQf-qFQWEe-ALtDLBqByUg" name="AccessMode">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_aQf-qVQWEe-ALtDLBqByUg" value="no_access"/>
+        </contents>
+      </eAnnotations>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+</uml:Model>
